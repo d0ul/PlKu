@@ -11,7 +11,7 @@
   </script>
   
   <svelte:head>
-      <title>플러스끄투 - {title}</title>
+      <title>플끄 리턴즈 - {title}</title>
   </svelte:head>
   <div class="dark:bg-gray-900 py-24">
     <div class={currentStep == 1 ? "text-hero w-full xl:mx-auto xl:max-w-screen-xl" : "hidden"}>

@@ -1,5 +1,5 @@
 /**
-Copyright (C) 2023~2024 Plus KKuTu Team
+Copyright (C) 2023~2024 PlKu Team
 */
 (function(){
 /**
@@ -730,12 +730,12 @@ $(document).ready(function(){
 		var roomTitles = [
 			'기체크로마토질량분석법',
 			'즐거운 끝말잇기~!',
-			'PLUS KKUTU',
+			'PlKu',
 			'레디 누르세요!!!',
 			'들어오세요~ 즐겜해요~',
 			'매칭 그만돌려라',
 			'키보드 부서질라 고만 눌러라',
-			'신나는 플러스끄투!',
+			'신나는 플끄 리턴즈!',
 			'오늘도 플끄 내일도 플끄',
 			'오끄감 채우는 방'
 		];
@@ -1202,7 +1202,7 @@ $(document).ready(function(){
 		requestInvite("AI");
 	});
 	$stage.dialog.inviteLink.on('click', function(e){
-		  var copyText = "플러스끄투에서 신나는 끄투 한판! 지금 같이 한 판 해요~ \n "+window.location;
+		  var copyText = "플끄 리턴즈에서 신나는 끄투 한판! 지금 같이 한 판 해요~ \n "+window.location;
 		  navigator.clipboard.writeText(copyText);
 		  alert("초대링크가 복사되었습니다. 원하는 곳에 붙여넣으세요!");
 	});
@@ -6322,7 +6322,7 @@ function setRoomHead($obj, room){
 		//.append($("<h5>").addClass("room-head-limit").html((mobile ? "" : (L['players'] + " ")) +))
 		//.append($("<h5>").addClass("room-head-round").html(L['rounds'] + " " + room.round+ "  |"))
 		//.append($("<h5>").addClass("room-head-time").html(room.time + L['SECOND']))
-		//.append($("<h5>").addClass("room-vendor").html("플러스끄투 kkutu.plus"));
+		//.append($("<h5>").addClass("room-vendor").html("플끄 리턴즈 kkutu.plus"));
 	if(rule.opts.indexOf("ijp") != -1){
 		$rm.append($("<div>").addClass("expl").html("<h5>" + room.opts.injpick.map(function(item){
 			return L["theme_" + item];

@@ -8,5 +8,5 @@
   </script>
   
   <svelte:head>
-      <title>플러스끄투 - {title}</title>
+      <title>플끄 리턴즈 - {title}</title>
   </svelte:head>

@@ -80,7 +80,7 @@
 </script>
 
 <svelte:head>
-	<title>플러스끄투 - {title}</title>
+	<title>플끄 리턴즈 - {title}</title>
 </svelte:head>
 
 <div  class="bg-black pt-12">
@@ -90,10 +90,10 @@
       서비스 종료 안내
     </h2>
     <p class="lg:ml-6 mt-4 text-left text-slate-300 text-xl">
-      안녕하십니까, 플러스끄투입니다.<br>
-      <strong>5월 6일 자정, 플러스끄투의 서비스가 종료됩니다.</strong><br>
-      지난 2023년 말 서비스 시작 이래 2024년 중순 끄투리오와의 통합까지 열정 가득히 운영해온 플러스끄투의 운영은 2025년 5월 6일을 끝으로 종료됩니다.<br>
-      다양한 단어 게임 대체제가 등장하고 매년 상당한 운영비가 지출되는 만큼, 추억으로 간직하기 위해서 그간 운영해 온 플러스끄투의 향후 운영이 어렵게 됐습니다.<br><br>
+      안녕하십니까, 플끄 리턴즈입니다.<br>
+      <strong>5월 6일 자정, 플끄 리턴즈의 서비스가 종료됩니다.</strong><br>
+      지난 2023년 말 서비스 시작 이래 2024년 중순 끄투리오와의 통합까지 열정 가득히 운영해온 플끄 리턴즈의 운영은 2025년 5월 6일을 끝으로 종료됩니다.<br>
+      다양한 단어 게임 대체제가 등장하고 매년 상당한 운영비가 지출되는 만큼, 추억으로 간직하기 위해서 그간 운영해 온 플끄 리턴즈의 향후 운영이 어렵게 됐습니다.<br><br>
       끄투리오 방문 시 감사의 의미로&nbsp;<img src="/img/kkutu/currency/ping.png" class="h-6 inline-block" alt="Ping"><strong>1,000핑</strong>을 제공드립니다.<br>
       라이브 서비스를 운영하며 배우고 느낀 점을 바탕으로 향후 보다 나은 서비스로 찾아뵙겠습니다.<br>
       감사합니다.
@@ -117,16 +117,16 @@
         <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
           <h3 class="text-xl font-bold text-white">추천 대체 서비스</h3>
           <p class="mt-2 text-gray-300">
-            끄투리오 : 플러스끄투의 많은 콘텐츠를 만나보실 수 있습니다.<br>
+            끄투리오 : 플끄 리턴즈의 많은 콘텐츠를 만나보실 수 있습니다.<br>
             끄투 온라인 (5월 중 출시) : 끄투의 원작자가 새로 개발중입니다. 아이템전, 낱말집 등 다채로운 경험이 가능합니다.<br>
             다누 : '뭐든지 다 있는 키뮤사전'의 방대한 DB를 바탕으로 끝말잇기를 할 수 있습니다.<br>
-            왁뚜 : 새로운 UI와 업적 시스템이 지원되며, 플러스끄투의 &lt;왁타버스&gt; 주제 이상으로 다양한 단어가 존재합니다.
+            왁뚜 : 새로운 UI와 업적 시스템이 지원되며, 플끄 리턴즈의 &lt;왁타버스&gt; 주제 이상으로 다양한 단어가 존재합니다.
           </p>
         </div>
         <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
           <h3 class="text-xl font-bold text-white">직접 운영하는 방법</h3>
           <p class="mt-2 text-gray-300">
-            플러스끄투는 오픈 소스입니다. (https://github.com/d0ul/Plus-KKuTu)<br>
+            플끄 리턴즈는 오픈 소스입니다. (https://github.com/d0ul/Plus-KKuTu)<br>
             라이선스를 준수하여 서버를 구동하면, 다른 프리서버에서는 현재 볼 수 없는 많은 모드를 경험할 수 있습니다.<br><br>
             자세한 문서나 기술 지원은 어렵습니다만 수정한 사항과 출처를 명시 (AGPL)하면 원하는 대로 마음껏 사용할 수 있습니다.
           </p>
@@ -150,7 +150,7 @@
         <img src="/img/web/ui/modern.png" alt="Modern UI" class="w-full h-24 mb-4 object-cover" />
         <h4 class="text-3xl font-bold">모던 UI</h4>
         <p class="mt-2">
-          플러스끄투만의 UI로&nbsp;<br class="hidden lg:block">새롭게 즐길 수 있습니다.
+          플끄 리턴즈만의 UI로&nbsp;<br class="hidden lg:block">새롭게 즐길 수 있습니다.
         </p>
       </button>
 

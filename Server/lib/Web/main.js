@@ -241,7 +241,7 @@ ROUTES.forEach(function(v){
 Server.get("/o/game", function(req, res){
 	var server = req.query.server;
 	if(blockedHostname.includes(req.hostname)){
-		res.send("다른 프리서버(끄투코리아, 끄투리오 등)에서 플러스끄투 링크를 도배하는 것에 대한 제보를 받았습니다. 홍보야 물론 좋지만 남에게 피해를 주는 행위는 자제합시다.");
+		res.send("다른 프리서버(끄투코리아, 끄투리오 등)에서 플끄 리턴즈 링크를 도배하는 것에 대한 제보를 받았습니다. 홍보야 물론 좋지만 남에게 피해를 주는 행위는 자제합시다.");
 		return;
 	}
 	
@@ -286,7 +286,7 @@ Server.get("/o/game", function(req, res){
 			'IJP_EXCEPT': Const.IJP_EXCEPT,
 			'ogImage': "https://kkutu.plus/img/og.png",
 			'ogURL': "https://kkutu.plus/",
-			'ogTitle': "플러스끄투",
+			'ogTitle': "플끄 리턴즈",
 			'ogDescription': "글자로 박진감 넘치는 게임을 즐겨보세요!"
 		});
 	}
@@ -295,7 +295,7 @@ Server.get("/o/game", function(req, res){
 Server.get("/game", function(req, res){
 	var server = req.query.server;
 	if(blockedHostname.includes(req.hostname)){
-		res.send("다른 프리서버(끄투코리아, 끄투리오 등)에서 플러스끄투 링크를 도배하는 것에 대한 제보를 받았습니다. 홍보야 물론 좋지만 남에게 피해를 주는 행위는 자제합시다.");
+		res.send("다른 프리서버(끄투코리아, 끄투리오 등)에서 플끄 리턴즈 링크를 도배하는 것에 대한 제보를 받았습니다. 홍보야 물론 좋지만 남에게 피해를 주는 행위는 자제합시다.");
 		return;
 	}
 
@@ -340,7 +340,7 @@ Server.get("/game", function(req, res){
 			'IJP_EXCEPT': Const.IJP_EXCEPT,
 			'ogImage': "https://kkutu.plus/img/og.png",
 			'ogURL': "https://kkutu.plus/",
-			'ogTitle': "플러스끄투",
+			'ogTitle': "플끄 리턴즈",
 			'ogDescription': "글자로 박진감 넘치는 게임을 즐겨보세요!"
 		});
 	}

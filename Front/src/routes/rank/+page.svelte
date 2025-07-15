@@ -9,7 +9,7 @@
   </script>
   
   <svelte:head>
-      <title>플러스끄투 - {title}</title>
+      <title>플끄 리턴즈 - {title}</title>
   </svelte:head>
   <div class="dark:bg-gray-900 py-24">
     <div class="w-full xl:mx-auto xl:max-w-screen-xl">

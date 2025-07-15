@@ -8,7 +8,7 @@
   </script>
   
   <svelte:head>
-      <title>플러스끄투 - {title}</title>
+      <title>플끄 리턴즈 - {title}</title>
   </svelte:head>
   <div class="dark:bg-gray-900 flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full">
@@ -21,6 +21,6 @@
         <a href="/" class="font-semibold leading-6 text-purple-600 hover:text-purple-500 dark:text-purple-300 dark:hover:text-purple-500">
           메인으로 돌아가기
         </a><br><br>
-        Copyright © 2024 Plus KKuTu Team. All rights reserved.
+        Copyright © 2024 PlKu Team. All rights reserved.
       </p>
   </div>

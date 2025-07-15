@@ -294,7 +294,7 @@ iframe{
 		transform-origin: center;
 		position: fixed;
 	  }
-	  /* 플러스끄투 커스텀 체크박스 */
+	  /* 플끄 리턴즈 커스텀 체크박스 */
 input[type="checkbox"]+label {
     display: block;
     font-weight: 500;

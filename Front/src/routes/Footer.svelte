@@ -4,7 +4,7 @@
     <div class="">
 
       <div class="text-gray-500 dark:text-gray-400">
-         &copy; 2025 Plus KKuTu, 모든 권리 보유<br>
+         &copy; 2025 PlKu, 모든 권리 보유<br>
       <a href="https://cafe.naver.com/ArticleRead.nhn?clubid=31109813&page=1&menuid=7&boardtype=L&articleid=109&referrerAllArticles=false" target='_blank'>
         <span>이용 약관</span></a> |
       <a href="https://cafe.naver.com/ArticleRead.nhn?clubid=31109813&page=1&menuid=7&boardtype=L&articleid=110&referrerAllArticles=false" target='_blank'>

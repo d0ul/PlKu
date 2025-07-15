@@ -61,14 +61,14 @@
         "type": "continuousSelection",
         "messages": ["동시에 진짜로 서비스 종료한다는데?", "사실 나도 같이 끄투 할 사람이 없어서 외로웠어", "플끄 망하면 다른 곳 알아봐야지"],
         "content": "알고 있는 다른 끄투 있어?",
-        "choice": ["끄투리오", "플러스끄투 말고도 있어?"],
+        "choice": ["끄투리오", "플끄 리턴즈 말고도 있어?"],
         "response": [""],
       },
       {
-        "keyword": "플러스끄투 말고도 있어?",
+        "keyword": "플끄 리턴즈 말고도 있어?",
         "type": "text",
         "messages": [""],
-        "content": "플러스끄투 말고도 다른 끄투도 있거든.\n마인크래프트 서버 알지? 생야생 서버도 있고 하잖아\n그거처럼 누구나 끄투를 만들 수 있어.",
+        "content": "플끄 리턴즈 말고도 다른 끄투도 있거든.\n마인크래프트 서버 알지? 생야생 서버도 있고 하잖아\n그거처럼 누구나 끄투를 만들 수 있어.",
         "choice": [""],
         "response": [""],
       },
@@ -290,9 +290,9 @@
           </div>
         </div>
         <div class="flex items-center opacity-50">
-          <img class="h-10 w-10 rounded-full" src="/icon/favicon-96x96.png" alt="플러스끄투">
+          <img class="h-10 w-10 rounded-full" src="/icon/favicon-96x96.png" alt="플끄 리턴즈">
           <div class="ml-4">
-            <h3 class="font-semibold">플러스끄투</h3>
+            <h3 class="font-semibold">플끄 리턴즈</h3>
             <p class="text-sm text-gray-500">대화상대 없음</p>
           </div>
         </div>

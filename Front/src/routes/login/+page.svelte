@@ -8,7 +8,7 @@
   </script>
   
   <svelte:head>
-      <title>플러스끄투 - {title}</title>
+      <title>플끄 리턴즈 - {title}</title>
   </svelte:head>
   <div class="dark:bg-gray-900 flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -50,7 +50,7 @@
             </a>
         </div>
       <p class="mt-10 text-center text-sm text-gray-500 dark:text-gray-300">
-        로그인이 이루어지면 Plus KKuTu Team의 
+        로그인이 이루어지면 PlKu Team의 
         <a href="https://cafe.naver.com/pluskkutu/109" class="font-semibold leading-6 text-purple-600 hover:text-purple-500 dark:text-purple-300 dark:hover:text-purple-500">이용약관</a>과 <a href="https://cafe.naver.com/pluskkutu/110" class="font-semibold leading-6 text-purple-600 hover:text-purple-500 dark:text-purple-300 dark:hover:text-purple-500">개인정보처리방침</a>에 동의하게 됩니다.
         
       </p>

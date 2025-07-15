@@ -1,5 +1,5 @@
 /**
-Copyright (C) 2023~2024 Plus KKuTu Team
+Copyright (C) 2023~2024 PlKu Team
 */
 (function(){
 /**

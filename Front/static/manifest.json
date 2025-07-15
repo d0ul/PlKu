@@ -1,5 +1,5 @@
 {
- "name": "플러스끄투",
+ "name": "플끄 리턴즈",
  "icons": [
   {
    "src": "\/icon/android-icon-36x36.png",
@@ -39,8 +39,8 @@
   }
  ],
  "background_color": "#ffffff",
- "short_name": "플러스끄투",
- "description": "모든 것이 플러스! 플러스끄투",
+ "short_name": "플끄 리턴즈",
+ "description": "모든 것이 플러스! 플끄 리턴즈",
  "start_url": "/game?server=0&locale=ko_KR",
  "display": "standalone",
  "orientation": "portrait"
