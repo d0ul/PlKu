@@ -27,13 +27,6 @@ Pub.ready = function(isPub) {
         database: GLOBAL.PG_DATABASE,
         host: GLOBAL.PG_HOST
     });
-    var IoPg = new PgPool({
-        user: GLOBAL.IO_USER,
-        password: GLOBAL.IO_PASSWORD,
-        port: GLOBAL.IO_PORT,
-        database: GLOBAL.IO_DATABASE,
-        host: GLOBAL.IO_HOST
-    });
 
     Redis.on('connect', function() {
         connectPg(false);
@@ -52,11 +45,11 @@ Pub.ready = function(isPub) {
                 PLLog.error("Error when connecting to main PostgreSQL server: " + err.toString());
                 return;
             }
-            connectIoPg(pgMain, noRedis);
+            initializeDatabase(pgMain, noRedis);
         });
     }
 
-    function connectIoPg(pgMain, noRedis) {
+    /*function connectIoPg(pgMain, noRedis) {
         PLLog.info("KKuTuIO Conn...");
         IoPg.connect(function(err, pgIoMain) {
             if (err) {
@@ -69,12 +62,11 @@ Pub.ready = function(isPub) {
             }
             initializeDatabase(pgMain, pgIoMain, noRedis);
         });
-    }
+    }*/
 
-    function initializeDatabase(pgMain, pgIoMain, noRedis) {
+    function initializeDatabase(pgMain, noRedis) {
         var redisAgent = noRedis ? null : new Collection.Agent("Redis", Redis);
         var mainAgent = new Collection.Agent("Postgres", pgMain);
-        var ioAgent = new Collection.Agent("Postgres", pgIoMain);
 
         var DB = exports;
         var i;
@@ -101,9 +93,6 @@ Pub.ready = function(isPub) {
 		DB.migrators = new mainAgent.Table("migrators");
 
         DB.ip_block = new mainAgent.Table("ip_block");
-
-        DB.io_session = new ioAgent.Table("session");
-        DB.io_users = new ioAgent.Table("users");
 
         if (exports.ready) {
             exports.ready(Redis, Pg, IoPg);

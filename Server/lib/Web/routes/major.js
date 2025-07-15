@@ -172,33 +172,6 @@ Server.get("/securityCode", function(req, res){
 	});}
 });
 
-Server.get("/migration/:plSc/:ioSc/:ioUid", function(req, res){
-	if (!res.headersSent) {
-	var usc = req.params.plSc;
-	var isc = req.params.ioSc;
-	var iuid = req.params.ioUid
-
-	MainDB.users.findOne([ 'eventuid', usc ]).on(function($user){
-		if(!$user){
-			res.send({ result: 411, value: "플러스끄투 보안코드가 옳지 않습니다." });
-		}
-		else{
-		MainDB.io_users.findOne([ '_id', isc ]).on(function($userIO){
-			if(!$userIO){
-				res.send({ result: 412, value: "끄투리오 식별번호가 옳지 않습니다." });
-			}
-			else{
-				if($userIO.flags.uid.value !== iuid){
-					res.send({ result: 413, value: "끄투리오 보안코드가 옳지 않습니다." });
-				}
-				else{
-					res.send({ result: 200, value: "이전테스트 대성공~!!꺄" });
-				}
-			}
-		});
-	}
-	});}
-});
 
 Server.get("/sns/cafe/post/:cafeid/:listCnt/:boardid", async function(req, res){
 	if (!req.headers.referer || !req.headers.referer.includes('kkutu.plus')) {
