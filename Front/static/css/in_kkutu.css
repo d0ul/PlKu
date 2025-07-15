@@ -237,12 +237,12 @@ equ{
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 50px;
-    background: #F1F5F9;
+    background: #000;
     height: 100vh;
     position: fixed;
     z-index: 4;
     width: 100vw;
-	background-image: url('/img/kkutu/PC로딩 이미지.webp');
+	//background-image: url('/img/kkutu/PC로딩 이미지.webp');
 	box-shadow: inset 0 0 5em 1em #000;
     background-position: center;
     background-repeat: no-repeat;

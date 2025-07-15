@@ -68,7 +68,7 @@ exports.run = (Server, page) => {
 			let auth = require(path.resolve(__dirname, '..', 'auth', 'auth_' + i + '.js'))
 			Server.get('/login/' + auth.config.vendor, passport.authenticate(auth.config.vendor))
 			Server.get('/login/' + auth.config.vendor + '/callback', passport.authenticate(auth.config.vendor, {
-				successRedirect: '/game?server=0',
+				successRedirect: '/o/game?server=0',
 				failureRedirect: '/loginfail'
 			}))
 			passport.use(new auth.config.strategy(auth.strategyConfig, auth.strategy(process, MainDB /*, Ajae */)));
@@ -99,7 +99,7 @@ exports.run = (Server, page) => {
 			let id = req.query.id || "ADMIN";
 	
 			if (!req.session.profile) {
-				res.redirect("/game?server=0&f=1");
+				res.redirect("/o/game?server=0&f=1");
 			} else {
 				let lp = {
 					id: id,
@@ -112,7 +112,7 @@ exports.run = (Server, page) => {
 					MainDB.users.update(['_id', id]).set(['lastLogin', now]).on();
 					req.session.admin = true;
 					req.session.profile = lp;
-					res.redirect("/game?server=0");
+					res.redirect("/o/game?server=0");
 				});
 			}
 		}

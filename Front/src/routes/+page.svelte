@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-	const title = '끄투리오 통합 안내';
+	const title = '혼자도 같이도 즐거운 온라인 단어 게임!';
   var userLang = "";
 
   let jsonData = {"message":{"status":"200","error":{"code":"","msg":""},"result":{"cafeId":31109813,"cafeName":"모렘미","cafeStaff":false,"cafeMember":false,"manageMenus":{"showArticleDelete":false,"showReportBadArticle":false,"showBoardNotice":false,"showOneBoardNotice":false,"showActivityStop":false,"showSecede":false,"showArticleMove":false,"showLevelUp":false,"showRequiredNotice":false,"showPopularArticleHide":false},"requiredNoticeList":[{"articleId":35,"title":"필독공지","isCafeBook":false,"isNewNotice":false}],"mainNoticeList":[{"cafeId":31109813,"articleId":206,"refArticleId":206,"replyListOrder":"","menuId":8,"menuName":"Loading","menuType":"B","restrictMenu":false,"boardType":"L","subject":"불러오는 중","summary":"","writerId":"","writerNickname":"","memberLevel":999,"memberLevelIconId":1,"profileImage":"","newArticle":true,"replyArticle":false,"blindArticle":false,"openArticle":true,"marketArticle":false,"useSafetyPayment":false,"escrow":false,"onSale":false,"cost":0,"formattedCost":"","productSale":{"saleStatus":"NONE","cost":""},"attachImage":true,"attachMusic":false,"attachMovie":false,"attachFile":false,"attachMap":false,"attachGpx":false,"attachPoll":false,"attachLink":false,"attachCalendar":false,"popular":false,"representImage":"","representImageType":"I","imageAttachCount":1,"useHead":true,"headId":12,"headName":"","enableComment":true,"hasNewComment":false,"refArticleCount":0,"readCount":14,"commentCount":0,"writeDateTimestamp":1714362828690,"aheadOfWriteDate":"24.04.29.","formattedReadCount":"14","formattedCommentCount":"0","noticeType":"N","showNoticeDelete":false,"delParent":false,"blogScrap":false,"enableRecommendation":true}]}}};
@@ -83,119 +83,58 @@
 	<title>플러스끄투 - {title}</title>
 </svelte:head>
 
-<div  class="dark:bg-gray-900 dark:text-white">
-  <section class="overflow-x-hidden relative isolate bg-slate-900 w-full flex flex-col">
-
-    <div class="">
-      <div class="mx-auto max-w-screen-xl container px-4 md:px-6">
-        <div class="pt-48 pb-28 justify-center flex flex-col items-center">
-          
-          <h1 class="text-hero mb-8 tracking-wider text-center text-slate-200 font-bold text-2xl lg:text-4xl">
-            더 많은 사람들과 글자로 놀자!
-          </h1>
-          <div class="text-hero relative mx-auto flex flex-col">
-            <img src="/img/web/title_1.png" class="leftReveal h-16 lg:h-32 justify-left" alt="끄투리오">
-            <img src="/img/web/title_2.png" class="leftReveal h-16 lg:h-32 justify-right" alt="대통합">
-          </div>
-
-          <div class="absolute opacity-20 mx-auto hidden lg:flex">
-            <img src="/img/web/glassFraction-1.png" class="glassFraction-1" alt="Glass Fraction 1" />
-            <img src="/img/web/glassFraction-2.png" class="glassFraction-2" alt="Glass Fraction 2" />
-          </div>
-
-          <p class="delayedFadeIn-200ms mt-8 text-center text-slate-300 text-lg lg:text-xl">
-            끄투리오와 플러스끄투의 상상도 못한 만남!<br>
-            6월 중으로 계정 이관 서비스가 시작될 예정입니다.</p>
-
-          
-        <!--  <button class="delayedFadeIn-200ms mt-12 rounded-2xl text-gray-800 shadow-lg px-6 py-2 font-bold text-2xl transform ease-in duration-100 active:scale-95 lg:hover:scale-110 lg:hover:bg-gradient-to-r lg:hover:from-blue-500 lg:hover:to-purple-500 lg:hover:text-white bg-slate-100" on:click={() => checkUI()}>
-            끄투리오 시작하기 →
-          </button>
-
-          {#if jsonDataServers.list[0] !== null}
-          <button class="mt-4 lg:flex inline-flex text-lg text-slate-500 "  on:click={() => checkUI()}>
-            플러스끄투 접속하기
-          </button>
-          {/if}-->
-
-          <button class="delayedFadeIn-200ms mt-12 rounded-2xl text-gray-800 shadow-lg px-6 py-2 font-bold text-2xl transform ease-in duration-100 active:scale-95 lg:hover:scale-110 lg:hover:bg-gradient-to-r lg:hover:from-blue-500 lg:hover:to-purple-500 lg:hover:text-white bg-slate-100" on:click={() => checkUI()}>
-            플러스끄투 시작하기 →
-          </button>
-        
-        </div>
-      </div>
-    </div>
-    
-  </section>
-  <div class="py-4 lg:py-12 bg-gradient-to-b from-slate-900 to-black"></div>
-  <div class="bg-black py-8 lg:py-24 text-center">
-    <h2 class="delayedFadeIn-500ms text-3xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
-     계정 이관 서비스는<br>
-     12월 31일까지 진행됩니다
-    </h2>
-    <p class="delayedFadeIn-600ms mt-4 text-center text-slate-300 text-xl">
-      플러스끄투 게임 접속은 6월 30일 종료됩니다.<br>
-      해당 기간 이후에는 로그인을 통해 보안 코드를 획득하실 수 있습니다.
-    </p>
-  </div>
-  <!-- FAQ -->
-  <div class="bg-black">
-  <div class="bg-black mx-auto py-8 lg:py-24 max-w-screen-xl">
+<div  class="bg-black pt-12">
+  <div class="mx-auto py-8 lg:py-24 max-w-screen-xl">
     <div class="px-4 lg:px-0">
-    <h2 class="lg:ml-6 text-3xl lg:text-7xl font-bold text-left">
-      자주 묻는 질문
+    <h2 class="lg:ml-6 text-3xl lg:text-7xl text-white font-bold text-left">
+      서비스 종료 안내
     </h2>
     <p class="lg:ml-6 mt-4 text-left text-slate-300 text-xl">
-      끄투리오와 플러스끄투의 통합에 대한 궁금증을 해결해 드립니다.
+      안녕하십니까, 플러스끄투입니다.<br>
+      <strong>5월 6일 자정, 플러스끄투의 서비스가 종료됩니다.</strong><br>
+      지난 2023년 말 서비스 시작 이래 2024년 중순 끄투리오와의 통합까지 열정 가득히 운영해온 플러스끄투의 운영은 2025년 5월 6일을 끝으로 종료됩니다.<br>
+      다양한 단어 게임 대체제가 등장하고 매년 상당한 운영비가 지출되는 만큼, 추억으로 간직하기 위해서 그간 운영해 온 플러스끄투의 향후 운영이 어렵게 됐습니다.<br><br>
+      끄투리오 방문 시 감사의 의미로&nbsp;<img src="/img/kkutu/currency/ping.png" class="h-6 inline-block" alt="Ping"><strong>1,000핑</strong>을 제공드립니다.<br>
+      라이브 서비스를 운영하며 배우고 느낀 점을 바탕으로 향후 보다 나은 서비스로 찾아뵙겠습니다.<br>
+      감사합니다.
     </p>
+    <button class="lg:ml-6 mt-8 mb-12 rounded-2xl text-gray-800 shadow-lg px-6 py-2 font-bold text-2xl transform ease-in duration-100 active:scale-95 lg:hover:scale-110 lg:hover:bg-gradient-to-r lg:hover:from-blue-500 lg:hover:to-purple-500 lg:hover:text-white bg-slate-100" on:click={() => checkUI()}>
+       게임 시작 →
+    </button>
   </div>
     <div class="mt-8">
       <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-6">
         <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
-          <h3 class="text-xl font-bold text-white">통합은 왜 하는 건가요?</h3>
-          <p class="mt-2 text-gray-300"><strong>끄투리오와 플러스끄투가 만나 끄투리오가 되었습니다.</strong> 더 좋은 서비스를 제공하기 위해서 긴 시간동안 서비스를 운영해온 끄투리오 팀과 통합하게 되었습니다.</p>
+          <h3 class="text-xl font-bold text-white">환불 문의</h3>
+          <p class="mt-2 text-gray-300">환불은 support@kkutu.plus로 문의 시 가능합니다.<br>
+          환불 대상 재화는 2024년 10월 26일 이후 구입한 Patreon MVP 멤버십, PlusCoin(유료)로 구입한 핑이 해당됩니다.</p>
         </div>
         <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
-          <h3 class="text-xl font-bold text-white">계정 이전 시 아이템은 어떻게 되나요?</h3>
-          <p class="mt-2 text-gray-300">계정 이전 시 XP의 경우 밸런스를 위해 끄투리오 자체 기준으로 환산하여 전환되며, 아이템과 핑은 변동 없이 이전됩니다.</p>
+          <h3 class="text-xl font-bold text-white">개인정보 삭제</h3>
+          <p class="mt-2 text-gray-300">서비스 종료 이후 계정 데이터를 포함한 사용자 정보는 개인정보처리방침에 의거 제거됩니다.<br>
+          단, 단어 데이터베이스(DB) 및 사용자 디자인 아이템(UGC)은 추후 다른 콘텐츠 개발 시 사용될 수 있습니다.</p>
         </div>
         <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
-          <h3 class="text-xl font-bold text-white">이미 끄투리오 계정이 있어도 이전 가능한가요?</h3>
-          <p class="mt-2 text-gray-300">끄투리오 계정이 이미 있다면, 끄투리오에서 획득한 핑과 아이템에 더해 이전된 데이터가 중첩됩니다.</p>
+          <h3 class="text-xl font-bold text-white">추천 대체 서비스</h3>
+          <p class="mt-2 text-gray-300">
+            끄투리오 : 플러스끄투의 많은 콘텐츠를 만나보실 수 있습니다.<br>
+            끄투 온라인 (5월 중 출시) : 끄투의 원작자가 새로 개발중입니다. 아이템전, 낱말집 등 다채로운 경험이 가능합니다.<br>
+            다누 : '뭐든지 다 있는 키뮤사전'의 방대한 DB를 바탕으로 끝말잇기를 할 수 있습니다.<br>
+            왁뚜 : 새로운 UI와 업적 시스템이 지원되며, 플러스끄투의 &lt;왁타버스&gt; 주제 이상으로 다양한 단어가 존재합니다.
+          </p>
         </div>
         <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
-          <h3 class="text-xl font-bold text-white">UI나 모드는 어떻게 되나요?</h3>
-          <p class="mt-2 text-gray-300">모던 UI는 선 폐지 및 안정화 후 테스트 서버에서 제공할 계획이며, 수학 퀴즈는 문제 추가의 어려움으로 삭제됩니다. 수학 대결, 오리진 쿵쿵따, 쿠폰, 스티커 등은 끄투리오에서도 그대로 이용 가능합니다.</p>
-        </div>
-        <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
-          <h3 class="text-xl font-bold text-white">SNS 채널은 어떻게 되나요?</h3>
-          <p class="mt-2 text-gray-300">YouTube 및 카페, Discord 등은 끄투리오 측의 SNS를 사용하며, 플러스끄투 SNS는 다른 용도로 재사용 될 예정입니다.</p>
-        </div>
-        <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
-          <h3 class="text-xl font-bold text-white">PC 클라이언트나 PWA는 그대로 이용 가능한가요?</h3>
-          <p class="mt-2 text-gray-300">PC 클라이언트는 작동이 중단 될 예정이며, PWA는 재설치 후 사용 가능합니다.</p>
-        </div>
-        <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
-          <h3 class="text-xl font-bold text-white">남은 MVP권 기간이 있습니다. 끄투리오 멤버십으로 이전되나요?</h3>
-          <p class="mt-2 text-gray-300">이전이 불가능합니다. Patreon을 통해 구독을 취소 해 주세요.</p>
-        </div>
-        <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
-          <h3 class="text-xl font-bold text-white">달달소 계정을 사용 중입니다. 이전할 수 있나요?</h3>
-          <p class="mt-2 text-gray-300">보안 코드 단위로 계정을 이전하기 때문에, 다른 로그인 수단을 사용하면 이전할 수 있습니다.</p>
+          <h3 class="text-xl font-bold text-white">직접 운영하는 방법</h3>
+          <p class="mt-2 text-gray-300">
+            플러스끄투는 오픈 소스입니다. (https://github.com/d0ul/Plus-KKuTu)<br>
+            라이선스를 준수하여 서버를 구동하면, 다른 프리서버에서는 현재 볼 수 없는 많은 모드를 경험할 수 있습니다.<br><br>
+            자세한 문서나 기술 지원은 어렵습니다만 수정한 사항과 출처를 명시 (AGPL)하면 원하는 대로 마음껏 사용할 수 있습니다.
+          </p>
         </div>
       </div>
     </div>
-  </div></div>
-  <!-- FAQ -->
-
-<!-- Right bottom overlay button to move to /moremtalk -->
-<div class="fixed right-0 bottom-4 z-50 p-4">
-  <a href="/moremtalk" target="_blank" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-xl p-4 shadow-lg transform ease-in duration-100 hover:scale-105">
-    모레미에게 물어보기
-  </a>
 </div>
-
-<div class="popup hidden fixed inset-0 z-50 overflow-auto bg-black/50 backdrop-blur-sm flex justify-center items-center">
+<div class="dark:text-white popup hidden fixed inset-0 z-50 overflow-auto bg-black/50 backdrop-blur-sm flex justify-center items-center">
   <div class="bg-white dark:bg-gray-800 pt-6 pb-8 px-4 lg:px-8 max-w-screen-xl">
     <button class="modal-close top-0 right-0 text-4xl text-gray-500" on:click={() => closeUI()}>&times;</button>
     
@@ -204,23 +143,23 @@
     
     <!-- 2 cards comparing old and new ui in row -->
     <div class="grid lg:grid-cols-2 gap-4 mt-4">
-      <button class="lg:hidden bg-gray-100 dark:bg-gray-900 p-4 lg:p-8 border-blue-500 border-b-4 transform ease-in duration-100 hover:scale-105 hover:bg-blue-500 hover:text-white active:scale-95" on:click={() => {
+      <button class="bg-gray-100 dark:bg-gray-900 p-4 lg:p-8 border-blue-500 border-b-4 transform ease-in duration-100 hover:scale-105 hover:bg-blue-500 hover:text-white active:scale-95" on:click={() => {
         document.cookie = "uipreference=modern";
-        window.location.href = `https://kkutu.plus/game?server=0&locale=${userLang}`;
+        window.location.href = `https://kkutu.plus/game?server=0`;
       }} aria-label="Modern">
         <img src="/img/web/ui/modern.png" alt="Modern UI" class="w-full h-24 mb-4 object-cover" />
-        <h4 class="text-3xl font-bold">Mobile UI</h4>
+        <h4 class="text-3xl font-bold">모던 UI</h4>
         <p class="mt-2">
-          새로운 사용자를 위한&nbsp;<br class="hidden lg:block">모바일 UI입니다.
+          플러스끄투만의 UI로&nbsp;<br class="hidden lg:block">새롭게 즐길 수 있습니다.
         </p>
       </button>
 
-      <button class="hidden lg:block bg-gray-100 dark:bg-gray-900 p-4 lg:p-8 border-purple-500 border-b-4 transform ease-in duration-100 hover:scale-105 hover:bg-purple-500 hover:text-white active:scale-95" on:click={() => {
+      <button class="bg-gray-100 dark:bg-gray-900 p-4 lg:p-8 border-purple-500 border-b-4 transform ease-in duration-100 hover:scale-105 hover:bg-purple-500 hover:text-white active:scale-95" on:click={() => {
         document.cookie = "uipreference=classic";
-        window.location.href = `https://kkutu.plus/o/game?server=0&locale=${userLang}`;
+        window.location.href = `https://kkutu.plus/o/game?server=0`;
       }} aria-label="Classic">
         <img src="/img/web/ui/classic.png" alt="Classic UI" class="w-full h-24 mb-4 object-cover" />
-        <h4 class="text-3xl font-bold">PC UI</h4>
+        <h4 class="text-3xl font-bold">클래식 UI</h4>
         <p class="mt-2">
           숙련된 사용자를 위한&nbsp;<br class="hidden lg:block">원작 끄투의 UI입니다.
         </p>

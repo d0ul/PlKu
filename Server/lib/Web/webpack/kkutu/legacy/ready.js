@@ -183,8 +183,10 @@ $(document).ready(function(){
 	}
 	$data._soundList = [
 		{ key: "k", value: "/media/kkutu/k.mp3" },
+		{ key: "gacha", value: "/media/kkutu/gacha.mp3" },
 		{ key: "lobby", value: "/media/kkutu/LobbyBGM.mp3" },
 		{ key: "jaqwi", value: "/media/kkutu/JaqwiBGM.mp3" },
+		{ key: "ps", value: "/media/kkutu/new/LobbyBGM.mp3" },
 		{ key: "jaqwiF", value: "/media/kkutu/JaqwiFastBGM.mp3" },
 		{ key: "game_start", value: "/media/kkutu/game_start.mp3" },
 		{ key: "kkt_game_start", value: "/media/kkutu/kkt_games_start.mp3" },
@@ -223,19 +225,6 @@ $(document).ready(function(){
 		$data._shut = JSON.parse(blockList);
 	}
 
-	
-	const evtpopup = $.cookie("evtpopup");
-	var today = new Date();
-	var year = today.getFullYear();
-	var month = today.getMonth() + 1;
-	var day = today.getDate();
-	var todayStr = year + "" + (month < 10 ? "0" + month : month) + "" + (day < 10 ? "0" + day : day);
-	if (!evtpopup){
-		$("#evtpopup").show();
-	}
-	else if(evtpopup < "0"){
-	  $("#evtpopup").show();
-	}
 
 	if(options){
 		var opts = JSON.parse(options);
@@ -1165,8 +1154,8 @@ $(document).ready(function(){
 			
 			try{
 				data = JSON.parse(e.target.result);
-				$date.html((new Date(data.time)).toLocaleString());
-				$version.html(data.version);
+				$date.text((new Date(data.time)).toLocaleString());
+				$version.text(data.version);
 				$players.empty();
 				for(i in data.players){
 					var u = data.players[i];
@@ -1179,6 +1168,15 @@ $(document).ready(function(){
 					if(u.id == data.me) $p.css('font-weight', "bold");
 				}
 				$rec = data;
+
+				for(i in data){
+					if (typeof data[i] === "string" && (data[i].includes("<") || data[i].includes(">"))){
+						alert("변조된 데이터가 포함되어 있어 리플레이를 재생하지 않습니다.");
+						$rec = false;
+						
+						return;
+					}
+				}
 				$stage.dialog.replayView.attr('disabled', false);
 			}catch(ex){
 				console.warn(ex);

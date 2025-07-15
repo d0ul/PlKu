@@ -80,7 +80,7 @@ $lib.MathType.turnStart = function(data){
 	clearTrespasses();
 	$data._tTime = addInterval(turnGoing, TICK);
 	$data._roundTime = data.roundTime;
-	playBGM('jaqwi');
+	playBGM('ps');
 	recordEvent('turnStart', {
 		data: data
 	});

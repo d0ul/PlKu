@@ -3079,7 +3079,7 @@ function getAudio(k, url, cb){
     };
     
     function onErr(err){
-        $sound[k] = new AudioSound('/media/kkutu/LobbyBGMS2.mp3'); // Use /media/m.mp3 on error
+        $sound[k] = new AudioSound('/media/kkutu/LobbyBGM.mp3'); // Use /media/m.mp3 on error
         done();
     }
     

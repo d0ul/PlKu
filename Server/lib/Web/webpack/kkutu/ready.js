@@ -220,10 +220,10 @@ $(document).ready(function(){
 
 	$data._soundList = [
 		{ key: "k", value: "/media/kkutu/k.mp3" },
-		{ key: "lobby", value: "/media/kkutu/LobbyBGMS2.mp3" },
+		{ key: "lobby", value: "/media/kkutu/LobbyBGM.mp3" },
 		{ key: "dialog", value: "/media/kkutu/dialog.mp3" },
 		{ key: "legacylobby", value: "/media/kkutu/LobbyBGM.mp3" },
-		{ key: "ingame", value: "/media/kkutu/LobbyBGMS2.mp3" },
+		{ key: "ingame", value: "/media/kkutu/LobbyBGM.mp3" },
 		{ key: "shop", value: "/media/kkutu/LobbySeolBGM.mp3" },
 		{ key: "credit", value: "/media/kkutu/kkutuEnding.mp3" },
 		{ key: "jaqwi", value: "/media/kkutu/JaqwiBGM.mp3" },
@@ -276,18 +276,6 @@ $(document).ready(function(){
 	}
 
 	
-	const evtpopup = $.cookie("evtpopup");
-	var today = new Date();
-	var year = today.getFullYear();
-	var month = today.getMonth() + 1;
-	var day = today.getDate();
-	var todayStr = year + "" + (month < 10 ? "0" + month : month) + "" + (day < 10 ? "0" + day : day);
-	if (!evtpopup){
-		$("#evtpopup").show();
-	}
-	else if(evtpopup < "0"){
-	  $("#evtpopup").show();
-	}
 
 	if(options){
 		var opts = JSON.parse(options);

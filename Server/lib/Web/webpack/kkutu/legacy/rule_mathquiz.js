@@ -42,7 +42,7 @@ $lib.MathQuiz.turnStart = function(data){
 	$stage.game.display.html($data._char = data.char);
 	clearInterval($data._tTime);
 	$data._tTime = addInterval(turnGoing, TICK);
-	playBGM('jaqwi');
+	playBGM('ps');
 };
 $lib.MathQuiz.turnGoing = function(){
 	var $rtb = $stage.game.roundBar;

@@ -1667,6 +1667,79 @@ function drawMyGoods(avGroup){
 			}
 			requestEquip(id, isLeft);
 		}else if(item.group == "CNS"){
+			var count = item.count;
+
+			if (!mobile){
+				stopBGM();
+				playBGM("gacha");
+
+				$stage.dialog.dress.hide();
+				var openIndex = 0;
+
+				var $gacha = $("<div>").addClass("gacha").prependTo("#Middle");
+				
+				$gacha.append($("<div>").addClass("gachaBg"));
+				$gacha.append($("<button>").addClass("gacha-exitBtn").text("×").on("click", function(){
+					$gacha.addClass("gacha-closing");
+					stopBGM();
+					playBGM('lobby');
+					_setTimeout(function(){
+						$gacha.remove();
+					}, 300);
+				}));
+
+				var $gachaBoxOuter = $("<div>").addClass("gacha-box-outer").appendTo($gacha);
+				var $gachaBox = $("<div>").addClass("gacha-box").appendTo($gachaBoxOuter);
+				var $gachaBoxText = $("<div>").addClass("gacha-box-text").appendTo($gachaBox);
+				var $gachaBoxItem = $("<div>").addClass("gacha-box-item").appendTo($gachaBox);
+
+				$gachaBoxText.append($("<div>").addClass("gacha-title").text(item.name));
+				$gachaBoxText.append($("<div>").addClass("gacha-divider"));
+				$gachaBoxText.append(($("<div>").addClass("gacha-mainItem-title")
+				.append($("<i>").addClass("fa-solid fa-gift"))
+				.append($("<b>").text("아이템 소개")))
+				.append($("<p>").addClass("gacha-mainItem-desc").text(item.desc))
+				.append($("<div>").addClass("gacha-btns")
+				.append($("<button>").addClass("gacha-openBtn").text("1개 열기").on("click", function(){
+						$gachaBoxItem.addClass("gacha-unboxing");
+						_setTimeout(function(){
+							$gachaBoxItem.removeClass("gacha-unboxing");
+							$.post("/consume/" + id, function(res){
+								if(res.exp) notice(L['obtainExp'] + ": " + commify(res.exp));
+								if(res.money) notice(L['obtainMoney'] + ": " + commify(res.money));
+								res.gain.forEach(function(item){ queueObtain(item); });
+								$data.box = res.box;
+								$data.users[$data.id].data = res.data;
+								send('refresh');
+								
+								drawMyDress($data._avGroup);
+								updateMe();
+							});
+								$gacha.addClass("gacha-closing");
+								stopBGM();
+								playBGM('lobby');
+								_setTimeout(function(){
+									$gacha.remove();
+								}, 300);
+						}, 1000);
+					}))
+				)
+				.append($("<p>").addClass("gacha-current").text("BGM: IchinoseSound"))
+				);
+				$gachaBoxItem.append($("<div>").addClass("gacha-item").css('background-image', "url(" + item.image + ")"))
+				.append($("<div>").addClass("gacha-itemBg"));
+
+
+				$(document).on("keydown", function(e){
+					if(e.keyCode === 27){
+						$gacha.addClass("gacha-closing");
+						_setTimeout(function(){
+							$gacha.remove();
+						}, 300);
+					}
+				});
+			}
+			else{
 			if(!confirm(L['sureConsume'])) return;
 			$.post("/consume/" + id, function(res){
 				if(res.exp) notice(L['obtainExp'] + ": " + commify(res.exp));
@@ -1679,7 +1752,8 @@ function drawMyGoods(avGroup){
 				drawMyDress($data._avGroup);
 				updateMe();
 			});
-		}
+		
+		}}
 	});
 }
 function requestEquip(id, isLeft){

@@ -29,7 +29,7 @@ function createWindow() {
 
   originalSize = screen.getPrimaryDisplay().workAreaSize;
 
-  const gameUrl = 'https://kkutu.plus/game?server=0&clientVer=1';
+  const gameUrl = 'https://kkutu.plus/o/game?server=0&clientVer=1';
 
   const filter = {
     urls: ['https://kkutu.plus/']
