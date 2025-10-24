@@ -95,7 +95,7 @@ Pub.ready = function(isPub) {
         DB.ip_block = new mainAgent.Table("ip_block");
 
         if (exports.ready) {
-            exports.ready(Redis, Pg, IoPg);
+            exports.ready(Redis, Pg);
         } else {
             PLLog.warn("DB.onReady was not defined yet.");
         }

@@ -19,31 +19,31 @@
   
     <div class="mt-4 sm:mx-auto sm:w-full ">
         <div class="sm:mx-auto sm:sm:max-w-sm">
-          <a href="https://kkutu.plus/login/kakao">
+          <a href="https://plku.pcor.me/login/kakao">
             <button class="text-lg bg-[#FFDE00] text-[#3C1E1E] mt-4 flex w-full justify-center p-3 items-center font-semibold leading-6 shadow-md transform ease-in duration-100 active:scale-95">
               <img src="/img/web/kakao.svg" class="h-6 mr-2" alt="Kakao"/>
               카카오로 로그인
             </button>
           </a>
-          <a href="https://kkutu.plus/login/naver">
+          <a href="https://plku.pcor.me/login/naver">
             <button class="text-lg bg-[#03C75A] text-white mt-4 flex w-full justify-center p-3 items-center font-semibold leading-6 shadow-md transform ease-in duration-100 active:scale-95">
               <img src="/img/web/naver.svg" class="h-6 mr-2" alt="NAVER"/>
               네이버로 로그인
             </button>
           </a>
-          <a href="https://kkutu.plus/login/google">
+          <a href="https://plku.pcor.me/login/google">
           <button class="text-lg bg-gray-100 hover:bg-gray-200 text-black mt-4 flex w-full justify-center p-3 items-center font-semibold leading-6 shadow-md transform ease-in duration-100 active:scale-95">
             <img src="/img/web/google.svg" class="h-6 mr-2" alt="Google"/>
             Google로 로그인
           </button>
           </a>
-          <a href="https://kkutu.plus/login/discord">
+          <a href="https://plku.pcor.me/login/discord">
             <button class="text-lg bg-[#5865F2] text-white mt-4 flex w-full justify-center p-3 items-center font-semibold leading-6 shadow-md transform ease-in duration-100 active:scale-95">
               <img src="/img/web/discord.svg" class="h-6 mr-2" alt="Discord"/>
               디스코드로 로그인
             </button>
           </a>
-          <a href="https://kkutu.plus/login/daldalso">
+          <a href="https://plku.pcor.me/login/daldalso">
             <button class="text-lg bg-[#20318D] text-white mt-4 flex w-full justify-center p-3 items-center font-semibold leading-6 shadow-md transform ease-in duration-100 active:scale-95">
             <span class="text-xl mr-2">🌛</span><span class="text-[#FFE101]">달달소</span>로 로그인
             </button>

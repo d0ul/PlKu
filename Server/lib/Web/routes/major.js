@@ -174,7 +174,7 @@ Server.get("/securityCode", function(req, res){
 
 
 Server.get("/sns/cafe/post/:cafeid/:listCnt/:boardid", async function(req, res){
-	if (!req.headers.referer || !req.headers.referer.includes('kkutu.plus')) {
+	if (!req.headers.referer || !req.headers.referer.includes('plku.pcor.me')) {
 		return res.status(403).send('Forbidden');
 	}
 
@@ -195,7 +195,7 @@ Server.get("/sns/cafe/post/:cafeid/:listCnt/:boardid", async function(req, res){
 });
 
 Server.get("/sns/cafe/notice/:cafeid", async function(req, res){
-	if (!req.headers.referer || !req.headers.referer.includes('kkutu.plus')) {
+	if (!req.headers.referer || !req.headers.referer.includes('plku.pcor.me')) {
 		return res.status(403).send('Forbidden');
 	}
 
@@ -211,7 +211,7 @@ Server.get("/sns/cafe/notice/:cafeid", async function(req, res){
 
 
 Server.get("/sns/cafe/view/:cafeid/:postid", async function(req, res){
-	if (!req.headers.referer || !req.headers.referer.includes('kkutu.plus')) {
+	if (!req.headers.referer || !req.headers.referer.includes('plku.pcor.me')) {
 		return res.status(403).send('Forbidden');
 	}
 
@@ -227,13 +227,13 @@ Server.get("/sns/cafe/view/:cafeid/:postid", async function(req, res){
 });
 
 Server.get("/audioProxy", async function(req, res){
-    if (!req.headers.referer || !req.headers.referer.includes('kkutu.plus')) {
+    if (!req.headers.referer || !req.headers.referer.includes('plku.pcor.me')) {
         return res.status(403).send('Forbidden');
     }
 
     const encodedURL = req.query.link;
     var decodedURL = decodeURIComponent(encodedURL);
-    const defaultURL = "https://kkutu.plus/media/kkutu/LobbyBGM.mp3";
+    const defaultURL = "https://plku.pcor.me/media/kkutu/LobbyBGM.mp3";
 
     if (!decodedURL.match(/\.mp3$|\.ogg$|\.wav$/)) {
         if (ytdl.validateURL(decodedURL)) {
@@ -264,7 +264,7 @@ Server.get("/audioProxy", async function(req, res){
 });
 
 Server.get("/ranking", function(req, res){
-	if (!req.headers.referer || !req.headers.referer.includes('kkutu.plus')) {
+	if (!req.headers.referer || !req.headers.referer.includes('plku.pcor.me')) {
 		return res.status(403).send('Forbidden');
 	}
 	var pg = Number(req.query.p);

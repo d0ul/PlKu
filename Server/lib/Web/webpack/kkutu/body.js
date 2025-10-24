@@ -3041,7 +3041,7 @@ function setRoomHead($obj, room){
 		//.append($("<h5>").addClass("room-head-limit").html((mobile ? "" : (L['players'] + " ")) +))
 		//.append($("<h5>").addClass("room-head-round").html(L['rounds'] + " " + room.round+ "  |"))
 		//.append($("<h5>").addClass("room-head-time").html(room.time + L['SECOND']))
-		//.append($("<h5>").addClass("room-vendor").html("플끄 리턴즈 kkutu.plus"));
+		//.append($("<h5>").addClass("room-vendor").html("플끄 리턴즈 plku.pcor.me"));
 	if(rule.opts.indexOf("ijp") != -1){
 		$rm.append($("<div>").addClass("expl").html("<h5>" + room.opts.injpick.map(function(item){
 			return L["theme_" + item];

@@ -12,7 +12,7 @@
   let showModal = false; // 모달 표시 여부를 나타내는 변수
 
   onMount(async () => {
-        const response = await fetch('https://kkutu.plus/sns/cafe/notice/31109813');
+        const response = await fetch('https://plku.pcor.me/sns/cafe/notice/31109813');
         
         if (!response.ok) {
           throw new Error('Failed to fetch data');
@@ -20,7 +20,7 @@
 
         jsonData = await response.json();
 
-        const responseFull = await fetch('https://kkutu.plus/sns/cafe/post/31109813/7/0');
+        const responseFull = await fetch('https://plku.pcor.me/sns/cafe/post/31109813/7/0');
         
         if (!responseFull.ok) {
           throw new Error('Failed to fetch data');
@@ -28,7 +28,7 @@
 
         jsonDataFull = await responseFull.json();
 
-        const responseServers = await fetch('https://kkutu.plus/servers');
+        const responseServers = await fetch('https://plku.pcor.me/servers');
         
         if (!responseServers.ok) {
           throw new Error('Failed to fetch data');
@@ -57,9 +57,9 @@
     }
     else{
       if (document.cookie.indexOf("uipreference=modern") != -1) {
-        window.location.href = "https://kkutu.plus/game?server=0&locale=" + userLang;
+        window.location.href = "https://plku.pcor.me/game?server=0&locale=" + userLang;
       }else{
-        window.location.href = "https://kkutu.plus/o/game?server=0&locale=" + userLang;
+        window.location.href = "https://plku.pcor.me/o/game?server=0&locale=" + userLang;
       }
     }
   }
@@ -106,7 +106,7 @@
       <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-6">
         <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
           <h3 class="text-xl font-bold text-white">환불 문의</h3>
-          <p class="mt-2 text-gray-300">환불은 support@kkutu.plus로 문의 시 가능합니다.<br>
+          <p class="mt-2 text-gray-300">환불은 support@plku.pcor.me로 문의 시 가능합니다.<br>
           환불 대상 재화는 2024년 10월 26일 이후 구입한 Patreon MVP 멤버십, PlusCoin(유료)로 구입한 핑이 해당됩니다.</p>
         </div>
         <div class="bg-slate-900 p-4 rounded-2xl shadow-lg">
@@ -145,7 +145,7 @@
     <div class="grid lg:grid-cols-2 gap-4 mt-4">
       <button class="bg-gray-100 dark:bg-gray-900 p-4 lg:p-8 border-blue-500 border-b-4 transform ease-in duration-100 hover:scale-105 hover:bg-blue-500 hover:text-white active:scale-95" on:click={() => {
         document.cookie = "uipreference=modern";
-        window.location.href = `https://kkutu.plus/game?server=0`;
+        window.location.href = `https://plku.pcor.me/game?server=0`;
       }} aria-label="Modern">
         <img src="/img/web/ui/modern.png" alt="Modern UI" class="w-full h-24 mb-4 object-cover" />
         <h4 class="text-3xl font-bold">모던 UI</h4>
@@ -156,7 +156,7 @@
 
       <button class="bg-gray-100 dark:bg-gray-900 p-4 lg:p-8 border-purple-500 border-b-4 transform ease-in duration-100 hover:scale-105 hover:bg-purple-500 hover:text-white active:scale-95" on:click={() => {
         document.cookie = "uipreference=classic";
-        window.location.href = `https://kkutu.plus/o/game?server=0`;
+        window.location.href = `https://plku.pcor.me/o/game?server=0`;
       }} aria-label="Classic">
         <img src="/img/web/ui/classic.png" alt="Classic UI" class="w-full h-24 mb-4 object-cover" />
         <h4 class="text-3xl font-bold">클래식 UI</h4>

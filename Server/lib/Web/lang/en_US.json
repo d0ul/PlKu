@@ -1,6 +1,6 @@
 {
 	"GLOBAL": {
-		"GPL": "<div style='color: #666;'>PlKu Copyright (C) 2021~ PlKu Team (support@kkutu.plus)<br>This program does not provide any form of warranty for the product.<br >This program is free software and can be freely redistributed under the conditions that meet the distribution requirements.<br>For more information, see the following repository containing the implementation of this program: <a target='_blank' href='https://github.com/10kwon/KKuTu'>Repository Link</a></div>",
+		"GPL": "<div style='color: #666;'>PlKu Copyright (C) 2021~ PlKu Team (support@plku.pcor.me)<br>This program does not provide any form of warranty for the product.<br >This program is free software and can be freely redistributed under the conditions that meet the distribution requirements.<br>For more information, see the following repository containing the implementation of this program: <a target='_blank' href='https://github.com/10kwon/KKuTu'>Repository Link</a></div>",
 		"CREATOR": "Dev Blog",
 		"HOME": "FA{home}",
 		"GAMES": "Game",
@@ -46,7 +46,7 @@
 		"SECOND": "s",
 		"AM": "AM",
 		"PM": "PM",
-		"AC": "Advertisement (Inquiries: support@kkutu.plus)",
+		"AC": "Advertisement (Inquiries: support@plku.pcor.me)",
 		"LOADING": "Loading",
 		"TEAM_100": "파랑 팀",
 		"TEAM_200": "빨강 팀",
@@ -202,7 +202,7 @@
 		"error_440": "Guests, unidentified users, and users under 16 living in South Korea are prohibited to play game for UTC+9 0 AM to 6 AM. Korean users may be kicked during that period.",
 		"error_441": "Cannot read your birthday and region information. Please check if birthday information is public on current account and sign-in again. After identity check, you may hide your birthday information.",
 		"error_442": "Connection with server has closed due to inactivity for 5 minutes.",
-		"error_443": "Your account has been restricted by PlKu Team team. To appeal, please ask us by email (support@kkutu.plus)",
+		"error_443": "Your account has been restricted by PlKu Team team. To appeal, please ask us by email (support@plku.pcor.me)",
 		"error_444": "Admin blocked your use of current account.\nReason: ",
 		"error_445": "Identity has been verified. Thank you for playing KKuTu.",
 		"error_446": "Admin blocked your use of current IP.\nReason: ",
